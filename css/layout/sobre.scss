@@ -30,7 +30,11 @@
   display: inline-block;
   width: 50px;
   height: 60px;
-  @include image-replacement;
+
+  // Chamando um placeholder para juntar seletores que utilizam o mesmo trecho de código
+  // Para não ficar repetido e espalhado no mesmo arquivo css final
+  @extend %image-replacement;
+  
   background-position: center;
   margin: 1em 1.5em 0 0;
 }

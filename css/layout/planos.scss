@@ -64,7 +64,11 @@
   font-size: 1.2em;
   // não preciso mais passar valor para a chamada desse mixin pois ele tem um valor padrão na sua assinatura
   @include borda-arredondada;
-  @include sombra-padrao;
+
+  // Adicionando um placeholder (@extend é para placeholder) e deve-se usar o sinal de % antes do nome
+  // No arquivo final (.css) ele vai juntar todos os caras que tem o mesmo place holder e criar uma declaração
+  // para todos eles, para vitar que o mesmo trecho de código seja repetido em vários lugares
+  @extend %sombra-padrao;
   margin-left: 2em;
 }
 
