@@ -4,3 +4,9 @@
   -webkit-border-radius: $raio;
   border-radius: $raio;
 }
+
+//----------- USANDO O COMPASS (compass-style.org/examples
+
+// importando tudo que for relacionado ao css3 do compass
+@import "compass/css3"; 
+//@import "compass/utilities";

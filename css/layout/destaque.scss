@@ -35,11 +35,14 @@
   padding: .6em;
   font-size: 1.2em;
   // Adicionando um mixin (@include é para mixin) e passando um valor literal para ele como argumento
-  @include borda-arredondada(50px);  
+  @include border-radius(50px);
   
   // Adicionando um placeholder (@extend é para placeholder) e deve-se usar o sinal de % antes do nome
   // No arquivo final (.css) ele vai juntar todos os caras que tem o mesmo place holder e criar uma declaração
   // para todos eles, para vitar que o mesmo trecho de código seja repetido em vários lugares
-  @extend %sombra-padrao;
-  font-weight: bold;
+ //@extend %sombra-padrao;
+
+ // Importando do compass
+ @include box-shadow(black 0 2px 10px); // comentei o código acima, pois agora estamos estudando compass
+ font-weight: bold;
 }
