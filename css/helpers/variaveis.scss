@@ -1,4 +1,4 @@
 // Variáveis simples usadas no Sass, muito útil quando temos valores muito repetidos no código fonte
-$cor-padrao: #c24e4b;
-$cor-auxiliar: #1e2c35;
+$cor-padrao: darken(#c24e4b, 0%); // darken permite deixar a cor original mais escura, passando a cor e o percentual
+$cor-auxiliar: lighten(#1e2c35, 0%); // lighten permite deixar a cor original mais clara, passando a cor e o percentual 
 $cor-branca: #fff;
