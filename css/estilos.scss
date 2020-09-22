@@ -1,6 +1,7 @@
 // Importando arquivos com a estrutura do Sass, não é obrigado a passar a extensão do arquivo (.scss)
 @import 'helpers/variaveis';
 @import 'helpers/mixin';
+@import 'helpers/placeholders';
 
 // Importando outros arquivos css para não precisar chamar no head do documento html
 // Como se trata de um arquivo css deve colocar a extensão (.css), se não o Sass vai procurar por (.scss)

@@ -5,10 +5,30 @@ header {
   height: 90px;
   width: 100%;
   position: absolute;
+
+  @media ($media-queries-mobile) {
+    height: auto;
+
+    h1 {
+      max-width: 50%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        margin: .5em auto;
+        display: block;
+      }  
+    }
+  }
 }
 
 header .container {
   position: relative;
+
+  // Criando media-queries diretamenteo dentro dos seletores que queremos que sejam modificados
+  @media ($media-queries-mobile) {
+    position: static; 
+  }
 }
 
 .menu-principal {
@@ -18,6 +38,13 @@ header .container {
   font-size: 1.2em;
   font-weight: lighter;
 
+  @media ($media-queries-mobile) {
+    position: static;
+    display: block;
+    text-align: center;   
+    width: auto;    
+  }
+
   // o SASS permite o alinhamento de propriedades da mesma forma que o html permite aninhar tags
   ul {
     padding-left: 0;
@@ -26,6 +53,11 @@ header .container {
   li {
     display: inline-block;
     width: 5em;
+
+    @media ($media-queries-mobile) {
+      margin: .4em;     
+      width: auto; 
+    }
   }
 
   a {
